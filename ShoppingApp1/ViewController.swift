@@ -11,7 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let apperance = UINavigationBarAppearance()
+        apperance.backgroundColor = UIColor(named: "anaEkran")
+        navigationController?.navigationBar.standardAppearance = apperance
+        navigationController?.navigationBar.compactAppearance = apperance
+        navigationController?.navigationBar.scrollEdgeAppearance = apperance
+        
     }
 
 
